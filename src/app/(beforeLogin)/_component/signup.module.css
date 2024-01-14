@@ -82,6 +82,7 @@
   background-color: rgb(15, 20, 25);
   color: white;
   font-size: 17px;
+  border: none;
 }
 .actionButton:disabled {
   opacity: 0.5;
