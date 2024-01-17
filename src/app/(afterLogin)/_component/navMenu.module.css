@@ -1,3 +1,8 @@
+.link {
+  display: inline-flex;
+  width: 259px;
+}
+
 .navPill {
   display: inline-flex;
   height: 50px;
@@ -5,7 +10,7 @@
   align-items: center;
 }
 
-.navPill:hover {
+.link:hover > .navPill {
   background-color: rgba(15, 20, 25, 0.1);
   border-radius: 29px;
 }

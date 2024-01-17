@@ -13,13 +13,21 @@ export default function Tab() {
   };
   return (
     <div className={style.homeFixed}>
-      <div className={style.homeText}>홈</div>
       <div className={style.homeTab}>
-        <div onClick={onClickRec}>
-          추천<div className={style.tabIndicator} hidden={tab === "fol"}></div>
+        <div
+          className={style.forYou}
+          style={{ color: tab === "rec" ? "#0F1419" : "#536471" }}
+          onClick={onClickRec}
+        >
+          For you
+          <div className={style.tabIndicator} hidden={tab === "fol"}></div>
         </div>
-        <div onClick={onClickFol}>
-          팔로우 중
+        <div
+          className={style.following}
+          style={{ color: tab === "fol" ? "#0F1419" : "#536471" }}
+          onClick={onClickFol}
+        >
+          Following
           <div className={style.tabIndicator} hidden={tab === "rec"}></div>
         </div>
       </div>

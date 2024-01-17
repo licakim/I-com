@@ -1,0 +1,44 @@
+.postForm {
+  width: 598px;
+  height: 120px;
+  padding: 16px 16px 8px;
+  display: flex;
+  margin-top: 53px;
+  border-color: rgb(239, 243, 244);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.postUserSection {
+  width: inherit;
+  height: 153;
+  margin-right: 12px;
+  width: 56px;
+}
+
+.postUserImage {
+  width: 40px;
+  height: 40px;
+
+  padding: 12px 0px;
+
+  border-radius: 20px;
+}
+.postUserImage img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.postInputSection {
+  width: 510px;
+  height: 52px;
+  padding: 12px 0px;
+}
+.postForm textarea {
+  border: none;
+  width: 100%;
+  outline: none;
+  line-height: 24px;
+  font-size: 20px;
+}

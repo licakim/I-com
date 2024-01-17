@@ -1,7 +1,7 @@
 "use client";
-import style from "./logoutbutton.module.css";
+import style from "./logoutButton.module.css";
 
-export default function LogOutButton() {
+export default function LogoutButton() {
   const me = {
     id: "hyunjki",
     image: "/profileimg.jpg",
