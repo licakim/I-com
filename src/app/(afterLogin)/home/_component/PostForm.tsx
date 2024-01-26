@@ -29,11 +29,13 @@ export default function PostForm() {
         </div>
       </div>
       <div className={style.postInputSection}>
-        <textarea
-          value={content}
-          onChange={onChange}
-          placeholder="What is happening?!"
-        />
+        <div className={style.postText}>
+          <textarea
+            value={content}
+            onChange={onChange}
+            placeholder="What is happening?!"
+          />
+        </div>
         <div className={style.postButtonSection}>
           <div className={style.footerButtons}>
             <div className={style.footerButtonLeft}>
@@ -57,7 +59,7 @@ export default function PostForm() {
               </button>
             </div>
             <button className={style.actionButton} disabled={!content}>
-              게시하기
+              Post
             </button>
           </div>
         </div>

@@ -1,0 +1,138 @@
+.modalBackground {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  background-color: white;
+  position: relative;
+  top: 5%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  min-width: 600px;
+  max-height: 400px;
+}
+.head {
+  padding: 0 16px;
+}
+
+.cancel {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  top: 8px;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.cancel:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.body {
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.textAreaDiv {
+  flex: 1;
+  /* height: 120px; */
+  padding: 12px 0px;
+  padding-top: 16px;
+}
+.textArea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  line-height: 24px;
+  font-size: 20px;
+  padding: 2px 0px;
+}
+/* .textArea::placeholder {
+  font-family: "Malgun Gothic", sans-serif;
+} */
+.input {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(239, 243, 244);
+}
+
+.profile {
+  width: 40px;
+  height: 128px;
+  margin-right: 12px;
+  padding-top: 12px;
+}
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.profileImage img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 0.15;
+  align-items: center;
+}
+
+.buttonsLeft {
+  flex: 1;
+}
+
+.insertButtons {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 155, 240, 0.01);
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  border-radius: 18px;
+}
+.insertButtons svg {
+  fill: rgb(29, 155, 240);
+}
+.insertButtons:hover {
+  background-color: rgb(29, 155, 240, 0.1);
+}
+
+.postButton {
+  width: 66.73px;
+  height: 36px;
+  margin-left: 12px;
+  padding: 0px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #1d9bf0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.postButton:disabled {
+  opacity: 0.5;
+}

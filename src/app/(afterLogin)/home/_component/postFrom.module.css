@@ -1,7 +1,9 @@
 .postForm {
   width: 598px;
   height: 120px;
-  padding: 16px 16px 8px;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   margin-top: 53px;
   border-color: rgb(239, 243, 244);
@@ -10,20 +12,18 @@
 }
 
 .postUserSection {
-  width: inherit;
-  height: 153;
+  width: 40px;
+  height: 116px;
   margin-right: 12px;
-  width: 56px;
+  padding-top: 12px;
 }
 
 .postUserImage {
   width: 40px;
   height: 40px;
-
-  padding: 12px 0px;
-
   border-radius: 20px;
 }
+
 .postUserImage img {
   width: 40px;
   height: 40px;
@@ -31,14 +31,83 @@
 }
 
 .postInputSection {
+  width: 514px;
+  height: 116px;
+  padding-top: 4px;
+}
+
+.postText {
   width: 510px;
   height: 52px;
   padding: 12px 0px;
 }
-.postForm textarea {
+.postText textarea {
   border: none;
-  width: 100%;
+  width: 509.5px;
   outline: none;
   line-height: 24px;
   font-size: 20px;
+  padding: 2px 0px;
+}
+
+.postButtonSection {
+  width: 514px;
+  height: 56px;
+  padding: 0px 0px 8px;
+}
+
+.footerButtons {
+  display: flex;
+  width: 514px;
+  height: 48px;
+  align-items: flex-end;
+}
+.footerButtonLeft {
+  display: flex;
+  align-items: center;
+  width: 443.27px;
+  height: 40px;
+}
+.uploadButton {
+  width: 34px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  background-color: rgb(29, 155, 240, 0.01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadButton svg {
+  width: 20px;
+  height: 20px;
+}
+.actionButton {
+  width: 66.73px;
+  height: 36px;
+  margin: 0px 0px 0px 12px;
+  margin-top: 8px;
+  padding: 0px 16px;
+  background-color: #1d9bf0;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 18px;
+}
+.uploadButton:hover {
+  background-color: rgb(29, 155, 240, 0.1);
+}
+.uploadButton svg {
+  fill: rgb(29, 155, 240);
+}
+.actionButton:disabled {
+  opacity: 0.5;
+}
+.actionButton:hover {
+  background-color: rgb(26, 140, 216);
 }

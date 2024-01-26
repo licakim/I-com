@@ -7,12 +7,9 @@ import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
 import TrendSection from "./_component/TrendSection";
 import FollowRecommend from "./_component/FollowRecommend";
-
-export default function AfterLoginLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+import RightSearchZone from "./_component/RightSearchZone";
+type Props = { children: ReactNode; modal: ReactNode };
+export default function AfterLoginLayout({ children, modal }: Props) {
   return (
     <div className={style.container}>
       <header className={style.leftSectionWrapper}>
@@ -28,7 +25,7 @@ export default function AfterLoginLayout({
                 <NavMenu />
               </ul>
               <Link href="/compose/tweet" className={style.postButton}>
-                게시하기
+                Post
               </Link>
             </nav>
             <LogoutButton />
@@ -39,7 +36,8 @@ export default function AfterLoginLayout({
         <div className={style.rightSectionInner}>
           <main className={style.main}>{children}</main>
           <section className={style.rightSection}>
-            <div style={{ marginBottom: 60, width: "inherit" }}>
+            <RightSearchZone />
+            {/* <div style={{ marginBottom: 60, width: "inherit" }}>
               <form className={style.search}>
                 <svg width={20} viewBox="0 0 24 24" aria-hidden="true">
                   <g>
@@ -48,7 +46,7 @@ export default function AfterLoginLayout({
                 </svg>
                 <input type="search" placeholder="Search" />
               </form>
-            </div>
+            </div> */}
             <TrendSection />
             <div className={style.followRecommend}>
               <h3>팔로우 추천</h3>
@@ -59,6 +57,7 @@ export default function AfterLoginLayout({
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }
