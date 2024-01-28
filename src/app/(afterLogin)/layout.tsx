@@ -49,7 +49,7 @@ export default function AfterLoginLayout({ children, modal }: Props) {
             </div> */}
             <TrendSection />
             <div className={style.followRecommend}>
-              <h3>팔로우 추천</h3>
+              <h3>Who to follow</h3>
               <FollowRecommend />
               <FollowRecommend />
               <FollowRecommend />

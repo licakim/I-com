@@ -1,0 +1,22 @@
+.mainZone {
+  display: flex;
+  flex-direction: column;
+}
+
+.formZone {
+  display: flex;
+  height: 53px;
+  width: 510px;
+  padding: 0px 16px;
+}
+
+.trend {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend h3 {
+  padding: 12px 16px;
+  font-size: 20px;
+  font-weight: bold;
+}

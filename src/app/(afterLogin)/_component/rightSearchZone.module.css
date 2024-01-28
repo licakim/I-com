@@ -50,6 +50,7 @@
   font-size: 15px;
   font-weight: 600;
 }
+
 .radio {
   display: flex;
   flex-direction: row;
@@ -72,6 +73,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+}
+
+.radioHover input:checked:hover {
 }
 
 .radioHover:hover {
